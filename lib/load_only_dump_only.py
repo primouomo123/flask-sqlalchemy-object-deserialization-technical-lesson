@@ -27,7 +27,7 @@ user_schema = UserSchema()
 
 user_data = {"name": "Lua",  "password": "secret"}   # created_at is dump_only
 
-user =  user_schema.load( user_data  )   
+user = user_schema.load(user_data)   
 
 pprint(user_schema.dumps(user))                      # password is load_only
 # => '{"name": "Lua", "created_at": "2023-11-11T10:56:55.898190"}'
